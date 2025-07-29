@@ -44,7 +44,7 @@ export default function FacialExpression({ setSongs }) {
         axios.get(`https://moody-player-4s7e.onrender.com/songs?mood=${_expression}`)
         .then(response=>{
             console.log(response.data);
-            setSongs(response.data.songs);
+            setSongs(response.data.song);
         })
     }
 
