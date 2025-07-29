@@ -1,14 +1,13 @@
-import FacialExpression from './components/FacialExpression'
-import MoodSongs from './components/MoodSongs'
+import FacialExpression from "./components/FacialExpression";
+import MoodSongs from "./components/MoodSongs";
 
 function App() {
-
   return (
     <>
-      <FacialExpression/>
-      <MoodSongs/>
+      <FacialExpression setSongs={setSongs} />
+      <MoodSongs Songs={songs} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
